@@ -56,7 +56,7 @@
     margin-bottom:12px;
   }
   .brand-left{
-    display:flex; align-items:center; gap:9px;
+    display:flex; align-items:center;
   }
   .brand-mark{
     width:36px; height:36px; flex:none;
@@ -67,13 +67,6 @@
     transform:rotate(-4deg);
   }
   .brand-mark svg{width:20px;height:20px;}
-  .brand-left p{
-    margin:0;
-    font-size:11px;
-    line-height:1.35;
-    color:rgba(255,255,255,0.6);
-    max-width:110px;
-  }
   .shop-name{
     text-align:center;
     padding-top:2px;
@@ -123,7 +116,6 @@
 
   @media (max-width:400px){
     .shop-name h1{font-size:15px;}
-    .brand-left p{display:none;}
   }
 
   .search-wrap{position:relative;}
@@ -172,26 +164,15 @@
   /* Empty state */
   .empty{
     display:flex; flex-direction:column; align-items:center; text-align:center;
-    padding:64px 20px 30px;
+    padding:70px 20px;
     color:#6a6656;
   }
   .empty .stamp{
     width:64px; height:64px; border-radius:50%;
     border:2.5px dashed rgba(31,75,63,0.3);
     display:flex; align-items:center; justify-content:center;
-    margin-bottom:16px; transform:rotate(-8deg);
-    color:var(--pine); opacity:.5;
-  }
-  .empty h2{
-    font-family:'Kanit',sans-serif; font-size:16px; color:var(--ink); margin:0 0 6px;
-  }
-  .empty p{font-size:13px; margin:0; max-width:320px; line-height:1.6;}
-  .empty .hint{
-    display:flex; gap:6px; flex-wrap:wrap; justify-content:center; margin-top:16px;
-  }
-  .empty .hint span{
-    font-size:12px; background:var(--paper-2); border:1px solid var(--line);
-    padding:5px 11px; border-radius:8px; color:var(--pine-dark);
+    transform:rotate(-8deg);
+    color:var(--pine); opacity:.4;
   }
 
   .no-result{
@@ -295,7 +276,6 @@
           <circle cx="8.6" cy="8.6" r="1.35" fill="#12352C"/>
         </svg>
       </div>
-      <p>ระบบเช็คราคาไว พิมพ์แค่บางตัวอักษรก็เจอ</p>
     </div>
     <div class="shop-name">
       <h1>หจก.สุวรรณโฮลเซล</h1>
@@ -331,9 +311,6 @@
     <div class="stamp">
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.2-3.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
     </div>
-    <h2>เริ่มพิมพ์เพื่อค้นหาราคา</h2>
-    <p>พิมพ์แค่บางส่วนของชื่อสินค้าตามลำดับตัวอักษร ไม่ต้องพิมพ์ติดกันหรือถูกทั้งหมดก็เจอ</p>
-    <div class="hint"><span>มาม่า</span><span>นมข้น</span><span>สบู่กเอ</span><span>ข้าวเหนียว</span></div>
   </div>
 
   <div id="results"></div>
